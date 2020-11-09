@@ -1,0 +1,23 @@
+.navback{
+    background-color:#232428 !important;
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #25CCF7;
+}
+.faq-margin-top{
+    margin-top:150px !important;
+}
+.guidelines{
+    color: #25CCF7;
+    font-weight:bold;
+    text-align:left;
+}
+.guideline-text{
+    text-align:left;
+}
+.featureheading{
+    margin-top:80px;
+}

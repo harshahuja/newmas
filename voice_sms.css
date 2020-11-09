@@ -1,0 +1,117 @@
+/*Header starts*/
+
+.heading_txt{
+    text-align:center;
+    color:white;
+    /* padding-top:120px; */
+    margin-top:-420px;
+}
+.heading_txt2{
+    font-family: 'Dancing Script', cursive;
+    font-size:90px;
+
+}
+.heading_factors h2{
+    font-size: 20px;
+    color: white;
+}
+.heading_factors{
+    padding-top:250px;
+}
+@media only screen and (max-width: 1200px) {
+    .heading_factors h2{
+        display:none;
+    }
+    .txtsms_butt{
+        display:none;
+    }
+}
+.txtsms_butt{
+    margin-top:0px !important;
+}
+/* header ends */
+
+/*Factor Starts*/
+.factor-box {
+    background-image:linear-gradient(to bottom,#a0a9ab59 ,rgb(83 190 195 / 21%) 100%);
+    background-size:contain;
+  /* background-color: rgba(255, 255, 255, 0.8) ; */
+  font-size: 1.5rem ;
+  padding: 2.5rem ;
+  text-align: center ;
+  border-radius: 3px ;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s
+}
+
+@media only screen and (max-width: 56.25em) {
+  .factor-box {
+      padding: 2rem;
+      margin-top:20px;
+  }
+}
+
+.factor-box__icon {
+  font-size: 6rem;
+  margin-bottom: .5rem;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent
+}
+
+@media only screen and (max-width: 56.25em) {
+  .factor-box__icon {
+      margin-bottom: 0
+  }
+}
+
+.factor-box:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+  transform: translateY(-1.5rem) scale(1.03)
+}
+.factor-box__text{
+    /* color:white; */
+    font-size:18px !important;
+    margin-top: 15px;
+}
+.heading-tertiary{
+    /* color:white; */
+    font-size:23px !important;
+    margin-top:30px;
+}
+.featureheading{
+    margin-top:300px;
+}
+.factor_txtsms{
+    margin-top:60px;
+}
+.factor-icons{
+    font-size:70px !important;
+}
+.featureheading2{
+    margin-top:100px !important;
+}
+/*Factor Ends*/
+/*Feature Starts*/
+/*Feature Ends*/
+/*New Column*/
+.image_txtsms{
+    height:500px;
+}
+.txt_newcolumn{
+    margin-top: 90px;
+}
+.txt_newcolumn h1{
+    font-size:35px;
+    text-align:left;
+}
+.txt_newcolumn p{
+    color:grey;
+}
+/*New Column ends*/

@@ -1,0 +1,756 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+/*Nvabar Css*/
+.navback{
+    background-color: transparent;
+    height:100px;
+    z-index:401;
+    position:fixed;
+}
+#navcolorchange.scrolled {
+  background-color: #232428 !important;
+  transition: background-color 200ms linear;
+}
+.navbrand{
+    font-size:25px;
+    font-weight:800;
+    margin-left:-30px;
+}
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: transparent;
+    border:none ;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	/* .navbar .nav-item:hover .nav-link{ color: #fff;  } */
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}	
+
+/* .navbrand:hover{
+    color:black
+} */
+.logo{
+    margin-left:5px;
+}
+.logoimg{
+    width:9%;
+}
+
+@media only screen and (max-width: 600px) {
+    .navback{
+        height:auto;
+    }
+    .navbrand{
+        display:none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .navbrand{
+        margin-left:-4px !important;
+    }
+}
+ 
+/*Sticky icon*/
+.icon-bar {
+    position: fixed;
+    top: 82%;
+    left:95%;
+    z-index:1000;
+    
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 9px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+    padding-top:2px;
+    padding-bottom:2px;
+  }
+  
+  
+  
+  .facebook {
+    background: #25D366 !important; 
+    border-radius:5%;
+  }
+  @media only screen and (max-width:800px){
+      .icon-bar{
+          left:85%;
+      }
+  }
+
+  
+   
+  .buttonmiss {
+    background-color: #25CCF7;
+    border-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color:transparent;
+    color: white;
+    /* padding: 0px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+  }
+  
+  
+  .footericon {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:transparent;
+    color: white;
+    text-align: center;
+    z-index:1000;
+
+ }
+ @media screen and (min-width: 600px) and (max-width: 2000px) {
+   .footericon{
+       display:none;
+   }
+ }
+
+
+/*Main Css*/
+/* .backimage{
+    height:115vh;
+    background-image: linear-gradient(to bottom,#000000 ,rgba(0,0,0,0) 100%),url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} */
+a{
+    color:white;
+    background-color:transparent !important;
+}
+a:hover{
+    color:white;
+}
+
+.content1{
+    height: 300px !important;
+    margin-top: 100px;
+ }
+.mainhead{
+    color:white;
+    background:#008BA0;
+    margin-top:350px;
+    text-align:center;
+}
+.border1 h2{
+    color:white;
+    text-align:center;
+}
+.specialcolor{
+    color:#008BA0;
+    font-weight:900;
+
+}
+.parallax {
+    /* The image used */
+    background-image: linear-gradient(to bottom,#000000 ,rgba(0, 0, 0, 0.548) 100%),url("images/topbg.jpeg");
+  
+    /* Set a specific height */
+    min-height: 700px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.mainheading{
+    z-index: 6;
+    width: 791px; 
+    margin-top:-700px;
+}
+.border1{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    background-color: transparent;
+    margin-top:200px;
+    height:300px;
+    width:1000px;
+    margin-left:-140px;
+}
+.mainheadingalign{
+    margin-top:-280px;
+    width:800px;
+    margin-left:100px;
+
+    
+}
+.row .border1 h4{
+    font-size:30px;
+    font-weight:500;
+}
+.row .border1 h2{
+    font-size:50px;
+    font-weight:100;
+}
+
+ @media only screen and (max-width: 800px) {
+    .mainheading{
+        z-index: 6;
+        width: auto; 
+        margin-top:-700px;
+    }
+    .border1{
+        border-style: none;
+        border-width: 0px;
+        border-color:none !important;
+        background-color: transparent;
+        margin-top:500px;
+        height:auto;
+        width:auto;
+        margin-left:auto;
+    }
+    .mainheadingalign{
+        margin-top:-280px;
+        width:auto;
+        margin-left:auto;
+    
+        
+    }
+    .slide{
+        margin-top:90px;
+        /* height:250px; */
+    }
+    .row .border1 h2{
+        font-size:30px;
+    }
+
+}
+
+/*Carousel Css*/
+.parallax2 {
+    /* The image used */
+    background-image: url("images/parallax2.jpg");
+  
+    /* Set a specific height */
+    min-height: 680px; 
+    margin-top:130px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ .mas{
+     text-align:center;
+     margin-top:-600px;
+     color:white;
+ }
+ @media only screen and (max-width: 600px) {
+    .parallax2{
+        margin-top:30px;
+        height:700px;
+    }
+    .mas{
+        margin-top:-680px;
+    }
+}
+.row .mas h2{
+    font-weight:900;
+}
+.row .mas h4{
+    margin-top:30px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+ .carousel-control-next{
+    margin-top:1090px;
+}
+.carousel-control-prev{
+    margin-top:1090px;
+}
+.carousel-arrows{
+    font-size:50px !important;
+    font-weight:900 !important;
+}
+
+
+
+
+
+/* control image height */
+.card-img-top-250 {
+    
+    overflow:hidden;
+}
+
+.slide{
+    margin-top:-400px;
+   
+}
+.slide2{
+    margin-left:120px;
+}
+@media only screen and (max-width: 800px){
+    .slide {
+        /* margin-left: 60px; */
+        margin-top:-420px;
+    }
+    .slide2{
+        margin-left:auto;
+    }
+    
+    .card{
+        height:390px !important;
+        /* box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); */
+    }
+    .carousel-control-next{
+        margin-top:930px !important;
+    }
+    .carousel-control-prev{
+        margin-top:930px;
+    }
+}
+.card-header{
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+    background:#25CCF7 !important;
+    color:white;
+}
+.card{
+    height:350px;
+    max-width: auto;
+}
+
+    
+
+
+
+/*Carousel Slider Button*/
+/* .sliderbutton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background:#ddd !important;
+    
+  }
+  
+  .sliderbutton:hover {
+    background-color: #ddd !important;
+    color: black !important;
+  }
+  
+  .prev {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .round { */
+    /* border-radius: 50%; */
+  
+
+/*Carousel Slider Button ends*/
+/*Carousel Css ends*/
+
+
+/*Feature Css*/
+.feature-container{
+    margin-top:70px;
+}
+.featureheading{
+    text-align:center;
+    margin-top:140px;
+    color:black;
+}
+.featureheading h2{
+    font-weight:800;
+}
+.features h4{
+    text-align:center;
+    color:grey;
+    font-weight:200;
+}
+.features p{
+  text-align:center;
+}
+.feature-row2{
+    margin-top:70px;
+}
+@media only screen and (max-width: 800px){
+    .feature-row2{
+        margin-top:auto;
+    }
+}
+.features hr{
+    border-bottom-width: 4px;
+    border-bottom-color: #ff0000;
+    margin: 10px 145px;
+    display: inline-block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #25CCF7;
+    width: 60px;
+}
+@media only screen and (max-width: 800px){
+    .features hr{
+       display:none;
+    }
+}
+/*Feature Css Ends*/
+/*Factor CSS*/
+
+.factorimage1{
+    height:250px;
+    width:100%;
+}
+.factorimage2{
+    height:250px;
+    width:100%;
+    margin-top:30px;
+}
+.factorimage4{
+    height:250px;
+    width:100%;
+    margin-top:30px;
+}
+.factorcol{
+    margin-top:-50px;
+}
+.factorrow{
+    margin-top:90px;
+}
+
+.h7lineheight{
+    line-height:2.5;
+}
+.container-picture{
+    position:relative;
+}
+.factor-image-text{
+    position:absolute;
+    bottom:8px;
+    color:white;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.5) 100%);
+}
+.butt{
+    background: linear-gradient(to right, #25CCF7  0, #25CCF7  51%, #25CCF7  100%);
+    box-shadow: 0 15px 50px 0 rgba(0,0,0,0.3);
+    border-color: transparent;
+    height: 50px;
+    border-radius: 7px;
+    width: 200px;
+    color:white;
+}
+@media only screen and (max-width: 800px){
+    .factorheading{
+        text-align:center;
+    }
+    .factorcol{
+        margin-top:30px;
+    }
+    .factorimage1,.factorimage2{
+        height:auto;
+    }
+    .factorimage4{
+        display:none;
+    }
+    .factorimage-4-display{
+        display:none;
+    }
+    .factor-button-align{
+        text-align:center;
+    }
+     .factorrow{
+         margin-top:0px;
+     }
+}
+.factor-image-center{
+    text-align: center;
+    margin-top:50px;
+}
+/*Factor Css Ends*/
+/*Pricing Css Starts*/
+.overlay-div{
+    background: #f4f5fa;
+    text-align: center;
+    /* max-width: 360px; */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    height:450px;
+}
+.pricing-2-row{
+    margin-top:20px;
+}
+@media only screen and (max-width: 800px){
+    .pricing-1-row{
+        margin-left:auto;
+    }
+    .pricing-1-col{
+        margin-top:20px;
+    }
+}
+#pricing h4{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.pricingh2{
+    padding-top:90px;
+    color:#25CCF7;
+    font-size:50px; 
+    font-weight:100;
+    
+}
+.addon-pricing-h4{
+    padding-top:90px;
+    font-weight:100;
+    color:#25CCF7;
+}
+.addon-pricing-h2{
+    color:#25CCF7;
+    font-size:50px; 
+    font-weight:100;
+}
+.pricingh6{
+    padding-top:30px;
+}
+.pricing-butt{
+    margin-top:30px;
+}
+.unlimited-text{
+    text-align:center;
+    color:black;
+    margin-top:80px;
+}
+.unlimited-pricing-h4{
+    margin-top:20px;
+}
+.api-charges-extra{
+    margin-top:15px;
+    font-size:12px;
+}
+.asterisk{
+    color:red;
+    vertical-align: middle;
+}
+/*Pricing Css Ends*/
+/*Box Css*/
+.box{
+    padding:20px;
+    
+}
+.box-top{
+    padding-top:90px;
+    padding-bottom:20px;
+    padding-right:20px;
+    padding-left:20px;
+}
+.material-icons{
+    color:#25CCF7;
+}
+@media only screen and (max-width: 800px){
+    .box-top{
+        padding-top:20px;
+    }
+}
+/*Box Css Ends*/
+/*Fotter Css*/
+.teal{
+    border-top:1px solid #25CCF7;
+    width:60px;
+}
+.footer-a-color{
+    color:#25CCF7 !important;
+}
+.page-footer{
+    background:lightgray;
+}
+/*Footer Css Ends*/
+/*free-demo*/
+.free-demo{
+    background: linear-gradient(to right, #25CCF7 0, #25CCF7 51%, #25CCF7 100%);
+    height:150px;
+    margin-top:120px;
+}
+.free-demo .col-md-9{
+    margin-top:55px;
+    font-size:25px;
+    /* margin-left:30px; */
+}
+.free-demo-butt{
+    background: linear-gradient(to right, white  0, white  51%, white  100%);
+    box-shadow: 0 15px 50px 0 rgba(0,0,0,0.3);
+    border-color: transparent;
+    height: 50px;
+    border-radius: 7px;
+    width: 200px;
+    color:#25CCF7;
+    margin-top:55px;
+    /* font-weight:500; */
+    font-size:20px;
+}
+@media only screen and (max-width: 800px){
+    .free-demo{
+        height:auto;
+    }
+    .free-demo-butt{
+        margin-top:auto;
+        margin-bottom:40px;
+    }
+}
