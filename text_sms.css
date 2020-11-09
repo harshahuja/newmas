@@ -30,6 +30,9 @@
     .txtsms_butt{
         display:none;
     }
+    .mainhead{
+      font-size:40px !important;
+    }
 }
 .txtsms_butt{
     margin-top:0px !important;
