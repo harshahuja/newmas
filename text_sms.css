@@ -23,6 +23,11 @@
 .heading_factors{
     padding-top:250px;
 }
+@media only screen and (max-width: 800px) {
+  .mainhead{
+    font-size:40px !important;
+  }
+}
 @media only screen and (max-width: 1200px) {
     .heading_factors h2{
         display:none;
@@ -30,9 +35,7 @@
     .txtsms_butt{
         display:none;
     }
-    .mainhead{
-      font-size:40px !important;
-    }
+    
 }
 .txtsms_butt{
     margin-top:0px !important;
